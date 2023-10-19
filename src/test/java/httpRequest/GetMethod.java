@@ -29,5 +29,9 @@ public class GetMethod {
 
                then().statusCode(200);
     }
+    @Test
+    void test03(){
+        
+    }
 
 }
