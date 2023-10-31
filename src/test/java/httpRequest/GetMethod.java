@@ -15,6 +15,7 @@ public class GetMethod {
         System.out.println("Response Body : "+res.getBody().asString());
         System.out.println("Response Time  : "+res.getTime());
         System.out.println("Response Header : "+res.getHeader("Content-type"));
+        System.out.println("");
 //        validate status code
         int statuscode= res.statusCode();
         Assert.assertEquals(200,statuscode);
