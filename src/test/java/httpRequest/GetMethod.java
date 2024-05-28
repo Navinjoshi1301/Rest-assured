@@ -10,7 +10,6 @@ public class GetMethod {
     @Test
     void getTest(){
        Response res= get("https://reqres.in/api/users?page=2");
-
         System.out.println("Status Code : "+res.statusCode());
         System.out.println("Response Body : "+res.getBody().asString());
         System.out.println("Response Time  : "+res.getTime());
@@ -21,7 +20,6 @@ public class GetMethod {
         int statuscode= res.statusCode();
         Assert.assertEquals(200,statuscode);
     }
-
     @Test
     void test02() {
 //    given when then
